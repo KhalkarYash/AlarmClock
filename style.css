@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --primary: #0582e5;
+    --secondary: #21a872;
+}
+
+body {
+    background-image: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+}
+
+.alarm-main-container {
+    /* background-color: rgba(230, 230, 230, 0.543); */
+    background-color: white;
+    height: 90vh;
+    width: 25vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.alarm-main-container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.384);
+}
+
+.btn {
+    color: white;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 20px;
+    padding: 0.6rem;
+    width: max-content;
+    width: 6rem;
+    font-size: 1rem;
+    box-shadow: 0 3px 7px rgb(0, 0, 0, 0.384);
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+}
+
+input {
+    padding: .3rem;
+    border-radius: 10px;
+    /* width: 15vw; */
+}
+.deleteBtn{
+    color: red;
+    border: 0;
+}
