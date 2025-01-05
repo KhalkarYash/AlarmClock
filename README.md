@@ -1,6 +1,6 @@
 ﻿# AlarmClock
 
-An interactive **Alarm Clock** built with JavaScript, designed to help you manage your time effectively. Whether you're looking for a simple alarm or want to experiment with JavaScript, this project has you covered!
+An interactive **Alarm Clock** built with JavaScript, designed to help you manage your time effectively. Whether you're looking for a simple alarm or want to experiment with JavaScript, you can work in here!
 
 ---
 
