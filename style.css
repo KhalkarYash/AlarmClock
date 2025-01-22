@@ -13,55 +13,38 @@ body {
     background-image: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
     display: flex;
     justify-content: center;
-    margin: 5vh;
-}
-
-.alarm-main-container {
-    /* background-color: rgba(230, 230, 230, 0.543); */
-    background-color: white;
-    height: 90vh;
-    width: 25vw;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
-
+    margin: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .alarm-main-container:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.384);
 }
 
-.btn {
-    color: white;
-    background-color: var(--primary);
-    border: 0;
-    border-radius: 20px;
-    padding: 0.6rem;
-    width: max-content;
-    width: 6rem;
-    font-size: 1.2rem;
-    box-shadow: 0 3px 7px rgb(0, 0, 0, 0.384);
-}
-
 .btn:hover {
     background-color: var(--secondary);
     transition-property: transform;
-    transition: 800ms;
+    transition: 300ms;
+}
+
+.deleteBtn {
+    color: red;
+    border: 0;
+}
+
+.currentTime {
+    font-size: 1.5rem;
+    font-style: bold;
 }
 
 input {
     padding: .4rem;
     border-radius: 10px;
     font-size: 1rem;
-    width: 15vw;
-}
-
-.deleteBtn {
-    color: red;
-    border: 0;
+    width: 70vw;
 }
 
 .upcomingAlarms {
@@ -73,7 +56,54 @@ input {
     overflow: auto;
 }
 
-.currentTime {
-    font-size: 1.5rem;
-    font-style: bold;
+.btn {
+    color: white;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 20px;
+    padding: 0.6rem;
+    width: max-content;
+    width: 70vw;
+    font-size: 1.2rem;
+    box-shadow: 0 3px 7px rgb(0, 0, 0, 0.384);
+    transition: all 300ms;
+}
+
+.alarm-main-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    height: 90vh;
+    width: 100vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+@media only screen and (min-width:789px) {
+
+    .alarm-main-container {
+        background-color: white;
+        height: 90vh;
+        width: 25vw;
+
+    }
+
+    .btn {
+        width: max-content;
+        width: 6rem;
+    }
+
+    input {
+        width: 15vw;
+    }
+
+    .upcomingAlarms {
+        height: 10vh;
+    }
+
+
 }
